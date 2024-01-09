@@ -8,9 +8,9 @@ const initialState = {
 // reducer :
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case "addUser":
+    case "add_user":
       return { ...state, users: [...state.users, action.payload] };
-    case "updateUser":
+    case "update_user":
       const { id, fullName, email } = action.payload;
       const user = state.users.find((us) => us.id === parseInt(id));
       if (user) {
@@ -18,7 +18,7 @@ const reducer = (state = initialState, action) => {
         user.email = email;
       }
       return state;
-    case "deleteUser":
+    case "delete_user":
       return {
         ...state,
         users: [
