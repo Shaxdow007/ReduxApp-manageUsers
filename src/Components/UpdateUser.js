@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { updateUserAction } from "../Config/actions";
 
 const UpdateUser = () => {
@@ -69,6 +69,9 @@ const UpdateUser = () => {
         <button onClick={handelSubmit} className="btn btn-primary">
           Submit
         </button>
+        <Link className="ms-4 btn btn-secondary" to="/">
+          Go Back
+        </Link>
       </form>
     </>
   );

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addUserAction } from "../Config/actions";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const AddUser = () => {
   // get the number of the users (for the idUser):
@@ -65,6 +65,9 @@ const AddUser = () => {
         <button onClick={handelSubmit} className="btn btn-primary">
           Submit
         </button>
+        <Link className="ms-4 btn btn-secondary" to="/">
+          Go Back
+        </Link>
       </form>
     </>
   );

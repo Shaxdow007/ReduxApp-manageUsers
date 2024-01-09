@@ -20,7 +20,7 @@ const UserList = () => {
         </Link>
       </div>
       <div className="table-responsive">
-        <table className="table table-striped table-hover table-borderless table-primary align-middle">
+        <table className="table table-striped table-hover table-borderless table-primary align-middle  text-center">
           <thead className="table-light">
             <tr>
               <th>#ID</th>
@@ -49,6 +49,13 @@ const UserList = () => {
               </tr>
             ))}
           </tbody>
+          <tfoot className="table-light">
+            <tr>
+              <td colSpan={4} className="text-end">
+                Number Of Our Users : <b>{users.length}</b>
+              </td>
+            </tr>
+          </tfoot>
         </table>
       </div>
     </>
