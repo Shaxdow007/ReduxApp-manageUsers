@@ -1,8 +1,8 @@
 // start state :
 const initialState = {
   users: [
-    { id: 1, fullName: "nour eddine houmame", email: "nourEddin@gamil.com" },
-    { id: 1, fullName: "ali benani", email: "benani@gamil.com" },
+    { id: 1, fullName: "nour eddine houmame", email: "nourEddine@gamil.com" },
+    { id: 2, fullName: "ali benani", email: "benani@gamil.com" },
   ],
 };
 // reducer :
